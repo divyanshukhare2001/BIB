@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IBIBI — International Business in Bihar India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#top" class="navbar__brand">
+      <span class="navbar__brand-icon"><i data-lucide="globe-2"></i></span>
+      <span class="navbar__brand-text">IBIBI</span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#countries">Countries</a>
+      <a href="#why">Events</a>
+      <a href="#packages">Travel Packages</a>
+      <a href="#footer">Contact Us</a>
+    </nav>
+
+    <a href="#login" class="btn btn--outline navbar__login">Login</a>
+
+    <button class="navbar__burger" id="burgerBtn" aria-label="Toggle menu">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+
+  <div class="navbar__mobile" id="navMobile">
+    <a href="#about">About</a>
+    <a href="#countries">Countries</a>
+    <a href="#why">Events</a>
+    <a href="#packages">Travel Packages</a>
+    <a href="#footer">Contact Us</a>
+    <a href="#login" class="btn btn--outline">Login</a>
+  </div>
+</header>
+
+<!-- ============ HERO SLIDER ============ -->
+<!-- <section class="hero" id="top">
+  <div class="hero__slides" id="heroSlides">
+    
+  </div>
+
+  <div class="hero__content">
+    <span class="eyebrow eyebrow--light" id="heroEyebrow"></span>
+    <h1 class="hero__heading" id="heroHeading"></h1>
+    <p class="hero__subheading" id="heroSubheading"></p>
+    <a href="#why" class="btn btn--gold hero__cta" id="heroCta"></a>
+  </div>
+
+  <div class="hero__dots" id="heroDots"></div>
+
+  <button class="hero__arrow hero__arrow--left" id="heroPrev" aria-label="Previous slide">
+    <i data-lucide="chevron-left"></i>
+  </button>
+  <button class="hero__arrow hero__arrow--right" id="heroNext" aria-label="Next slide">
+    <i data-lucide="chevron-right"></i>
+  </button>
+</section> -->
+
+<!-- ============ HERO SLIDER ============ -->
+<section class="hero" id="top">
+
+  <!-- Slide 1 -->
+  <div class="hero__slide is-active img-expand">
+    <img
+      class="hero__slide-bg"
+      src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1800&auto=format&fit=crop"
+      alt="International Business Conference">
+
+    <div class="hero__slide-overlay"></div>
+
+    <div class="hero__content">
+      <span class="eyebrow eyebrow--light">
+        International Business
+      </span>
+
+      <h1 class="hero__heading">
+        Connecting Bihar to Global Business Opportunities
+      </h1>
+
+      <p class="hero__subheading">
+        International business conferences, trade exhibitions, and global networking events.
+      </p>
+
+      <a href="#why" class="btn btn--gold hero__cta">
+        Explore Events
+      </a>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="hero__slide">
+    <img
+      class="hero__slide-bg"
+      src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1800&auto=format&fit=crop"
+      alt="Business Delegation">
+
+    <div class="hero__slide-overlay"></div>
+
+    <div class="hero__content">
+      <span class="eyebrow eyebrow--light">
+        Business Delegations
+      </span>
+
+      <h1 class="hero__heading">
+        Expand Your Business Beyond Borders
+      </h1>
+
+      <p class="hero__subheading">
+        Join international business delegations, meet global partners, and unlock new markets.
+      </p>
+
+      <a href="#countries" class="btn btn--gold hero__cta">
+        View Countries
+      </a>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="hero__slide">
+    <img
+      class="hero__slide-bg"
+      src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1800&auto=format&fit=crop"
+      alt="International Business Travel">
+
+    <div class="hero__slide-overlay"></div>
+
+    <div class="hero__content">
+      <span class="eyebrow eyebrow--light">
+        International Travel
+      </span>
+
+      <h1 class="hero__heading">
+        Explore Global Business Destinations
+      </h1>
+
+      <p class="hero__subheading">
+        Discover curated business travel packages, exhibitions, and networking opportunities across the world.
+      </p>
+
+      <a href="#packages" class="btn btn--gold hero__cta">
+        Explore Packages
+      </a>
+    </div>
+  </div>
+
+  <!-- Dots -->
+  <div class="hero__dots">
+    <button class="hero__dot is-active" aria-label="Slide 1">
+      <span></span>
+    </button>
+
+    <button class="hero__dot" aria-label="Slide 2">
+      <span></span>
+    </button>
+
+    <button class="hero__dot" aria-label="Slide 3">
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Arrows -->
+  <button class="hero__arrow hero__arrow--left" id="heroPrev" aria-label="Previous slide">
+    <i data-lucide="chevron-left"></i>
+  </button>
+
+  <button class="hero__arrow hero__arrow--right" id="heroNext" aria-label="Next slide">
+    <i data-lucide="chevron-right"></i>
+  </button>
+
+</section>
+
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="section-inner about__grid">
+    <div class="about__visual">
+      <!-- signature world-network illustration -->
+      <svg viewBox="0 0 480 480" class="world-svg" role="img" aria-label="Illustration of Bihar, India connected to global business hubs">
+        <circle cx="240" cy="240" r="188" fill="none" stroke="#DDE3EC" stroke-width="1"/>
+        <ellipse cx="240" cy="240" rx="90" ry="188" fill="none" stroke="#E4E9F0" stroke-width="1"/>
+        <ellipse cx="240" cy="240" rx="188" ry="188" fill="none" stroke="#E4E9F0" stroke-width="1" transform="rotate(60 240 240)"/>
+        <ellipse cx="240" cy="240" rx="188" ry="188" fill="none" stroke="#E4E9F0" stroke-width="1" transform="rotate(120 240 240)"/>
+        <line x1="52" y1="240" x2="428" y2="240" stroke="#E4E9F0" stroke-width="1"/>
+        <line x1="90" y1="140" x2="390" y2="140" stroke="#EEF1F5" stroke-width="1"/>
+        <line x1="90" y1="340" x2="390" y2="340" stroke="#EEF1F5" stroke-width="1"/>
+
+        <!-- flight paths -->
+        <path d="M 244 250 Q 181 76 118 168" fill="none" stroke="#C9992B" stroke-width="1.4" stroke-dasharray="4 5" stroke-linecap="round" opacity="0.55"/>
+        <path d="M 244 250 Q 308 200 372 292" fill="none" stroke="#C9992B" stroke-width="1.4" stroke-dasharray="4 5" stroke-linecap="round" opacity="0.55"/>
+        <path d="M 244 250 Q 186 230 128 322" fill="none" stroke="#C9992B" stroke-width="1.4" stroke-dasharray="4 5" stroke-linecap="round" opacity="0.55"/>
+        <path d="M 244 250 Q 170 186 96 232" fill="none" stroke="#C9992B" stroke-width="1.4" stroke-dasharray="4 5" stroke-linecap="round" opacity="0.55"/>
+        <path d="M 244 250 Q 308 58 372 150" fill="none" stroke="#C9992B" stroke-width="1.4" stroke-dasharray="4 5" stroke-linecap="round" opacity="0.55"/>
+
+        <!-- hubs -->
+        <g>
+          <circle cx="118" cy="168" r="14" fill="#C9992B" opacity="0.16" class="pulse-dot" style="animation-delay:0s; transform-origin:118px 168px;"/>
+          <circle cx="118" cy="168" r="4.5" fill="#B8862E"/>
+          <text x="118" y="148" text-anchor="middle" class="hub-label">UAE</text>
+        </g>
+        <g>
+          <circle cx="372" cy="292" r="14" fill="#C9992B" opacity="0.16" class="pulse-dot" style="animation-delay:.35s; transform-origin:372px 292px;"/>
+          <circle cx="372" cy="292" r="4.5" fill="#B8862E"/>
+          <text x="372" y="272" text-anchor="middle" class="hub-label">Singapore</text>
+        </g>
+        <g>
+          <circle cx="128" cy="322" r="14" fill="#C9992B" opacity="0.16" class="pulse-dot" style="animation-delay:.7s; transform-origin:128px 322px;"/>
+          <circle cx="128" cy="322" r="4.5" fill="#B8862E"/>
+          <text x="128" y="302" text-anchor="middle" class="hub-label">Germany</text>
+        </g>
+        <g>
+          <circle cx="96" cy="232" r="14" fill="#C9992B" opacity="0.16" class="pulse-dot" style="animation-delay:1.05s; transform-origin:96px 232px;"/>
+          <circle cx="96" cy="232" r="4.5" fill="#B8862E"/>
+          <text x="96" y="212" text-anchor="middle" class="hub-label">UK</text>
+        </g>
+        <g>
+          <circle cx="372" cy="150" r="14" fill="#C9992B" opacity="0.16" class="pulse-dot" style="animation-delay:1.4s; transform-origin:372px 150px;"/>
+          <circle cx="372" cy="150" r="4.5" fill="#B8862E"/>
+          <text x="372" y="130" text-anchor="middle" class="hub-label">USA</text>
+        </g>
+
+        <circle cx="244" cy="250" r="22" fill="#0E2238"/>
+        <circle cx="244" cy="250" r="30" fill="none" stroke="#0E2238" stroke-width="1" opacity="0.3" class="pulse-dot" style="transform-origin:244px 250px;"/>
+        <text x="244" y="296" text-anchor="middle" class="hub-label hub-label--center">BIHAR, INDIA</text>
+      </svg>
+    </div>
+
+    <div class="about__content">
+      <span class="eyebrow">About IBIBI</span>
+      <h2 class="section-heading">Connecting Bihar to Global Business Opportunities</h2>
+
+      <p class="body-text">
+        IBIBI (International Business in Bihar India) is a dedicated platform that connects
+        entrepreneurs, businesses, investors, and industry professionals through international
+        conferences, trade exhibitions, business delegations, and networking events.
+      </p>
+      <p class="body-text">
+        Our mission is to create meaningful global connections that promote collaboration,
+        encourage knowledge exchange, and help businesses from Bihar and across India explore
+        new opportunities in international markets.
+      </p>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-card__icon"><i data-lucide="globe-2"></i></span>
+          <span>Global Networking</span>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><i data-lucide="handshake"></i></span>
+          <span>Business Partnerships</span>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><i data-lucide="landmark"></i></span>
+          <span>Trade Exhibitions</span>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><i data-lucide="plane"></i></span>
+          <span>Business Delegations</span>
+        </div>
+      </div>
+
+      <a href="#why" class="btn btn--navy about__cta">
+        Explore Events <i data-lucide="arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE IBIBI ============ -->
+<section class="why" id="why">
+  <div class="section-inner">
+    <div class="why__header">
+      <span class="eyebrow">Why IBIBI</span>
+      <h2 class="section-heading">Why Choose IBIBI</h2>
+    </div>
+
+    <div class="why__grid">
+      <div class="why-card">
+        <span class="why-card__icon"><i data-lucide="globe-2"></i></span>
+        <h3>Global Network</h3>
+        <p>Connect with international entrepreneurs.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card__icon"><i data-lucide="handshake"></i></span>
+        <h3>Business Matchmaking</h3>
+        <p>Meet verified business partners.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card__icon"><i data-lucide="landmark"></i></span>
+        <h3>International Conferences</h3>
+        <p>Attend global business conferences.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card__icon"><i data-lucide="trending-up"></i></span>
+        <h3>Investment Opportunities</h3>
+        <p>Explore cross-border investments.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card__icon"><i data-lucide="plane"></i></span>
+        <h3>Business Tours</h3>
+        <p>Curated international business visits.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-card__icon"><i data-lucide="target"></i></span>
+        <h3>Expert Event Management</h3>
+        <p>Professionally organized global events.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ UPCOMING BUSINESS EVENTS ============ -->
+<section class="events" id="events">
+  <div class="section-inner">
+    <div class="events__header">
+      <span class="eyebrow">Upcoming Business Events</span>
+      <h2 class="section-heading">Where Global Business Meets</h2>
+      <p class="body-text">Discover international conferences, trade exhibitions, networking programs and business delegations.</p>
+    </div>
+
+    <div class="events__layout">
+      <div class="events__feature" id="eventsFeature">
+        <div class="events__feature-image" id="eventsFeatureImage" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1400&auto=format&fit=crop')">
+          <span class="events__feature-badge" id="eventsFeatureCategory">Business Summit</span>
+        </div>
+        <div class="events__feature-body">
+          <h3 class="events__feature-title" id="eventsFeatureTitle">India–UAE Business Summit</h3>
+          <div class="events__feature-meta">
+            <span><i data-lucide="calendar"></i> <span id="eventsFeatureDate">September 18, 2026</span></span>
+            <span><i data-lucide="map-pin"></i> <span id="eventsFeatureLocation">Abu Dhabi, UAE</span></span>
+          </div>
+          <p class="events__feature-desc" id="eventsFeatureDesc">A landmark gathering of policymakers and business leaders exploring trade corridors, investment partnerships, and joint ventures between Bihar's enterprises and the UAE market.</p>
+          <a href="#footer" class="btn btn--gold">Register Now <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="events__nav">
+        <h4 class="events__nav-heading">Upcoming Events</h4>
+        <ul class="events__nav-list" id="eventsNavList">
+          <li class="events__nav-item is-active"
+              data-category="Business Summit"
+              data-title="India–UAE Business Summit"
+              data-date="September 18, 2026"
+              data-location="Abu Dhabi, UAE"
+              data-desc="A landmark gathering of policymakers and business leaders exploring trade corridors, investment partnerships, and joint ventures between Bihar's enterprises and the UAE market."
+              data-image="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1400&auto=format&fit=crop">
+            <span class="events__nav-date">Sep 18</span>
+            <span class="events__nav-title">India-UAE Business Summit</span>
+            <i data-lucide="arrow-right" class="events__nav-arrow"></i>
+          </li>
+          <li class="events__nav-item"
+              data-category="Trade Expo"
+              data-title="Singapore Business Expo"
+              data-date="October 12, 2026"
+              data-location="Marina Bay, Singapore"
+              data-desc="A premier trade exhibition connecting exporters, investors and manufacturers with Southeast Asia's fastest-growing digital and logistics markets."
+              data-image="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1400&auto=format&fit=crop">
+            <span class="events__nav-date">Oct 12</span>
+            <span class="events__nav-title">Singapore Business Expo</span>
+            <i data-lucide="arrow-right" class="events__nav-arrow"></i>
+          </li>
+          <li class="events__nav-item"
+              data-category="Investor Forum"
+              data-title="Germany Investor Forum"
+              data-date="November 08, 2026"
+              data-location="Frankfurt, Germany"
+              data-desc="An exclusive forum pairing Bihar-based manufacturers with German investors and industrial partners seeking reliable, cost-effective production hubs."
+              data-image="https://images.unsplash.com/photo-1560439514-4e9645039924?q=80&w=1400&auto=format&fit=crop">
+            <span class="events__nav-date">Nov 08</span>
+            <span class="events__nav-title">Germany Investor Forum</span>
+            <i data-lucide="arrow-right" class="events__nav-arrow"></i>
+          </li>
+          <li class="events__nav-item"
+              data-category="Trade Mission"
+              data-title="Thailand Trade Mission"
+              data-date="December 20, 2026"
+              data-location="Bangkok, Thailand"
+              data-desc="A curated delegation trip for entrepreneurs to meet Thai manufacturers, distributors and tourism-sector partners over a series of B2B meetings."
+              data-image="https://images.unsplash.com/photo-1508009603885-50cf7c579365?q=80&w=1400&auto=format&fit=crop">
+            <span class="events__nav-date">Dec 20</span>
+            <span class="events__nav-title">Thailand Trade Mission</span>
+            <i data-lucide="arrow-right" class="events__nav-arrow"></i>
+          </li>
+        </ul>
+        <a href="#" class="events__nav-viewall">View All <i data-lucide="arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ============ FEATURED COUNTRIES ============ -->
+<section class="countries" id="countries">
+  <div class="section-inner">
+    <span class="eyebrow">Featured Countries</span>
+    <h2 class="section-heading">Where Business Takes You</h2>
+
+    <div class="countries__grid">
+      <div class="country-card" style="background-image:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop')">
+        <div class="country-card__overlay"></div>
+        <div class="country-card__content">
+          <h3>UAE</h3>
+          <p>A gateway hub linking South Asian trade with global markets.</p>
+          <span class="country-card__link">Explore <i data-lucide="arrow-right"></i></span>
+        </div>
+      </div>
+      <div class="country-card" style="background-image:url('https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=1200&auto=format&fit=crop')">
+        <div class="country-card__overlay"></div>
+        <div class="country-card__content">
+          <h3>Singapore</h3>
+          <p>Asia's financial capital, built for cross-border deal-making.</p>
+          <span class="country-card__link">Explore <i data-lucide="arrow-right"></i></span>
+        </div>
+      </div>
+      <div class="country-card" style="background-image:url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1200&auto=format&fit=crop')">
+        <div class="country-card__overlay"></div>
+        <div class="country-card__content">
+          <h3>Germany</h3>
+          <p>Europe's industrial powerhouse for manufacturing and trade.</p>
+          <span class="country-card__link">Explore <i data-lucide="arrow-right"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRAVEL PACKAGES ============ -->
+<section class="packages" id="packages">
+  <div class="section-inner">
+    <span class="eyebrow eyebrow--gold">Travel Packages</span>
+    <h2 class="section-heading section-heading--light">Curated Business Travel</h2>
+
+    <div class="packages__grid">
+      <div class="package-card">
+        <div class="package-card__img" style="background-image:url('https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop')"></div>
+        <div class="package-card__body">
+          <span class="package-card__country">United Arab Emirates</span>
+          <h3>Dubai Trade Summit</h3>
+          <div class="package-card__duration"><i data-lucide="clock"></i> 5 Days / 4 Nights</div>
+          <div class="package-card__footer">
+            <span class="package-card__price">₹ 1,45,000 <small>/ person</small></span>
+            <a href="#footer" class="package-card__link">Explore Package <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <div class="package-card__img" style="background-image:url('https://images.unsplash.com/photo-1565967511849-76a60a516170?q=80&w=1200&auto=format&fit=crop')"></div>
+        <div class="package-card__body">
+          <span class="package-card__country">Singapore</span>
+          <h3>Singapore Business Expo</h3>
+          <div class="package-card__duration"><i data-lucide="clock"></i> 4 Days / 3 Nights</div>
+          <div class="package-card__footer">
+            <span class="package-card__price">₹ 1,68,000 <small>/ person</small></span>
+            <a href="#footer" class="package-card__link">Explore Package <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <div class="package-card__img" style="background-image:url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1200&auto=format&fit=crop')"></div>
+        <div class="package-card__body">
+          <span class="package-card__country">Germany</span>
+          <h3>Frankfurt Industrial Fair</h3>
+          <div class="package-card__duration"><i data-lucide="clock"></i> 6 Days / 5 Nights</div>
+          <div class="package-card__footer">
+            <span class="package-card__price">₹ 2,10,000 <small>/ person</small></span>
+            <a href="#footer" class="package-card__link">Explore Package <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="footer">
+  <div class="section-inner footer__grid">
+    <div class="footer__brand">
+      <div class="footer__brand-row">
+        <span class="footer__brand-icon"><i data-lucide="globe-2"></i></span>
+        <span class="footer__brand-text">IBIBI</span>
+      </div>
+      <p>International Business in Bihar India — connecting entrepreneurs to global conferences, trade exhibitions, delegations, and curated business travel.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Explore</h4>
+      <a href="#about">About</a>
+      <a href="#countries">Countries</a>
+      <a href="#why">Events</a>
+      <a href="#packages">Travel Packages</a>
+      <a href="#footer">Contact Us</a>
+    </div>
+    <div class="footer__col">
+      <h4>Resources</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Services</a>
+      <a href="#">Partner with Us</a>
+      <a href="#">FAQs</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <span class="footer-contact"><a href=""><i data-lucide="map-pin"></i> Patna, Bihar, India</a></span>
+      <span class="footer-contact"><a href="tel: 9876543210"><i data-lucide="phone"></i> +91 98765 43210</a></span>
+      <span class="footer-contact"><a href="mailto: connect@ibibi.org"><i data-lucide="mail"></i> connect@ibibi.org</a></span>
+    </div>
+  </div>
+
+  <div class="section-inner footer__bottom">
+    <p>&copy; <span id="year"></span> IBIBI. All rights reserved.</p>
+    <!-- <div class="footer__legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div> -->
+  </div>
+</footer>
+
+<!-- ============ CONTACT POPUP ============ -->
+<div class="popup" id="popup" hidden>
+  <div class="popup__backdrop" id="popupBackdrop"></div>
+  <div class="popup__panel">
+    <button class="popup__close" id="popupClose" aria-label="Close"><i data-lucide="x"></i></button>
+
+    <div id="popupForm">
+      <span class="eyebrow">Let's Connect</span>
+      <h3 class="popup__heading">Talk to our business team</h3>
+      <p class="popup__text">Share a few details and we'll get in touch about upcoming events and opportunities.</p>
+
+      <form id="contactForm">
+        <input required type="text" placeholder="Full name" name="name" />
+        <input required type="email" placeholder="Email address" name="email" />
+        <input type="tel" placeholder="Phone number" name="phone" />
+        <textarea placeholder="What are you interested in?" name="message" rows="3"></textarea>
+        <button type="submit" class="btn btn--navy popup__submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="popupThanks" class="popup__thanks" hidden>
+      <span class="popup__thanks-icon"><i data-lucide="handshake"></i></span>
+      <h3>Thank you</h3>
+      <p>Our team will reach out to you shortly.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
