@@ -11,7 +11,41 @@
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="home" >
+
+  
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader__center">
+    <div class="preloader__logo">
+      <span class="preloader__logo-icon"><i data-lucide="globe-2"></i></span>
+      <span class="preloader__logo-text">IBIBI</span>
+    </div>
+
+    <p class="preloader__tagline">
+  <span class="preloader__tagline-group">
+    <span>Connecting Bihar</span>
+  </span>
+
+  <span class="preloader__tagline-group">
+    <span>to</span>
+  </span>
+
+  <span class="preloader__tagline-group">
+    <span>Global Business Opportunities</span>
+  </span>
+</p>
+  </div>
+
+  <div class="preloader__loading">
+    <span class="preloader__percent" id="preloaderPercent">0%</span>
+    <div class="preloader__bar">
+      <div class="preloader__bar-fill" id="preloaderBarFill"></div>
+    </div>
+  </div>
+</div>
+
+<div id="page-wrap">
 
 <!-- ============ NAVBAR ============ -->
 <header class="navbar" id="navbar">
@@ -453,7 +487,7 @@
           <div class="package-card__duration"><i data-lucide="clock"></i> 5 Days / 4 Nights</div>
           <div class="package-card__footer">
             <span class="package-card__price">₹ 1,45,000 <small>/ person</small></span>
-            <a href="#footer" class="package-card__link">Explore Package <i data-lucide="arrow-right"></i></a>
+            <a href="./package-uae.html" class="package-card__link">Explore Package <i data-lucide="arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -564,6 +598,9 @@
     </div>
   </div>
 </div>
+
+  </div>    
+    
 
 <script src="script.js" defer></script>
 </body>
