@@ -298,6 +298,8 @@
   .itinerary__day-mobile-img { display: block; }
   .itinerary__day { min-height: 0; opacity: 1; padding: 32px 0; }
   .itinerary__day h3 { font-size: 24px; }
+   .itinerary__layout{margin-top:0 !important;}
+   .itinerary {  padding: 40px 0 0px; }
 }
 
 /* ==========================================================
