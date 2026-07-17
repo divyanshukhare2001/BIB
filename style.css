@@ -357,6 +357,26 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   letter-spacing: -0.01em;
 }
 
+span.navbar__brand-icon-1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.divider{
+    width: 1px;
+    height: 38px;
+    background: var(--navy-500); /* light gray */
+}
+
+.international{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy-900);
+    font-family: var(--font-display);
+    letter-spacing: 0.75px;
+}
+
 .navbar__links { display: flex; align-items: center; gap: 36px; }
 .navbar__links a {
   font-size: 13.5px;
@@ -411,6 +431,24 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .navbar__burger { display: block; }
 }
 
+
+@media only screen and (max-width: 767px){
+  span.navbar__brand-icon-1 {
+    flex-direction: column;
+    gap: 3px;
+}span.navbar__brand-icon-1 {}
+
+
+
+.navbar__brand img {
+    width: 140px;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+}
+}
 /* ==========================================================
    HERO
    ========================================================== */
@@ -951,6 +989,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .package-card__link:hover { color: var(--gold-600); }
 .package-card__link svg, .package-card__link [data-lucide] { width: 14px; height: 14px; }
+
+#packages .package-card__price i{
+  color: var(--navy-900);
+  font-size: 12px;
+}
 
 @media (max-width: 900px) { .packages__grid { grid-template-columns: 1fr; } }
 
