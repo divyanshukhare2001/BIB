@@ -863,6 +863,47 @@ span.navbar__brand-icon-1 {
 
 
 
+
+
+
+.events__feature-image{
+    position:relative;
+    height:320px;
+    overflow:hidden;
+}
+
+/* Background video */
+.events__feature-video-bg{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+    filter:blur(20px);
+    transform:scale(1.2); /* hides blur edges */
+    opacity:.7;
+}
+
+/* Main video */
+.events__feature-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+    z-index:2;
+}
+
+.events__feature-badge{
+    z-index:3;
+}
+
+
+
+
+
 /* ==========================================================
    COUNTRIES
    ========================================================== */
